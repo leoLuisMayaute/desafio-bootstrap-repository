@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body {
+    background-color: beige;
+}
+
+/* estilos barra de navegacion */
 .contenedor-navegacion {
     background-color: rgb(20, 19, 19);
     display: flex;
@@ -28,7 +33,7 @@
 
 .li-de-lista-nav {
     list-style-type: none;
-    padding: 2rem;
+    padding-block: 2rem;
 }
 
 .li-de-lista-nav a {
@@ -36,14 +41,116 @@
     color: #ff0000;
 }
 
+/* estilos seccion principal */
+
+.contenedor-header {
+    background-color: rgb(151, 133, 133);
+    background-image: url("images/peru-pais-multidiverso.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 1rem;
+    padding-block: 10rem;
+}
+
+.encabezado {
+    font-family: 'Dancing Script',cursive;
+    color: red;
+    
+}
+
+.h1-main {
+    font-size: 10rem;
+    text-align: center;
+}
+
+.h2-main {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.parrafo-header {
+    font-size: 2rem;
+    text-align: center;
+    padding-inline: 10rem;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.contenedor-imagen-main {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.imagen-encabezado {
+    display: block;
+    width: 100%;
+}
+
+/* estilos slider */
+
+.contenedor-slider {
+    width: 100%;
+    margin: auto;
+    margin-block: 3rem;
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: black;
+    opacity: .5;
+    padding: 2rem;
+    border-radius: 0.2em;
+}
+
+.h2-slider {
+    margin-top: 25rem;
+    padding-inline: 2rem;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+/* clases footer */
+
+.contenedor-footer {
+    background-color: black;
+    text-align: center;
+}
+
+.contenedor-footer {
+    color: white;
+    padding: 1rem;
+}
+
+.logo-footer {
+    width: 3rem;
+}
+
+/* responsive para 768px a más */
 @media screen and (min-width: 768px) {
 
+    /* estilos barra de navegacion */
     .contenedor-navegacion {
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
     }
 
-    .li-de-lista-nav {
-        display: inline-block;
+    .contenedor-logo {
+        padding-left: 3rem;
+    }
+
+    .ul-lista-nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 1rem;
     }
 }
