@@ -36,6 +36,10 @@ body {
     padding-block: 2rem;
 }
 
+.li-de-lista-nav:hover {
+    border-bottom: 1px solid red;
+}
+
 .li-de-lista-nav a {
     text-decoration: none;
     color: #ff0000;
@@ -133,6 +137,11 @@ h5 {
 
 .logo-footer {
     width: 3rem;
+}
+
+.padding-block,
+.col-md {
+    padding-block: 5rem;
 }
 
 /* responsive para 768px a más */
